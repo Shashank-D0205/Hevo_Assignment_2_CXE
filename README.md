@@ -25,6 +25,8 @@ country_dim
 
 Inserted the messy data exactly as provided in the assessment.
 
+---
+
 2️⃣ Hevo Pipeline Setup
 
 Exposed local PostgreSQL using LocalToNet TCP tunneling.
@@ -34,6 +36,8 @@ Connected PostgreSQL to Hevo using Logical Replication.
 Configured destination using Snowflake Partner Connect.
 
 Loaded all raw tables into Snowflake with prefix: HEVOA2_.
+
+---
 
 3️⃣ Data Cleaning Using Hevo Models
 
@@ -53,6 +57,8 @@ Output Table
 
 CLEAN_CUSTOMERS
 
+---
+
 🧩 MODEL 2 — CLEAN_ORDERS
 Tasks Completed
 
@@ -67,6 +73,8 @@ Output Table
 
 CLEAN_ORDERS
 
+---
+
 🧩 MODEL 3 — CLEAN_PRODUCTS
 Tasks Completed
 
@@ -78,6 +86,8 @@ Tasks Completed
 Output Table
 
 CLEAN_PRODUCTS
+
+---
 
 🧩 MODEL 4 — JOIN the resultants (Joined Table)
 
@@ -133,6 +143,8 @@ Output Table
 
 FINAL_TABLE
 
+---
+
 🧪 Validation Queries (Snowflake)
 Verify row counts:
 SELECT COUNT(*) FROM HEVOA2_CUSTOMERS_RAW;
@@ -149,12 +161,12 @@ SELECT * FROM CLEAN_CUSTOMERS WHERE status = 'Invalid Customer';
 
 Verify orphan orders:
 SELECT *
-FROM FINAL_DATASET
+FROM FINAL_TABLE
 WHERE customer_email = 'Orphan Customer';
 
 Verify unknown products:
 SELECT *
-FROM FINAL_DATASET
+FROM FINAL_TABLE
 WHERE product_name = 'Unknown Product';
 
 🎥 Loom Video Link
@@ -174,5 +186,8 @@ Model 3: CLEAN CUSTOMERS
 Model 4: CLEAN ORDERS
 
 Model 5: CLEAN PRODUCTS
+
+
+---
 
 Model 6: JOIN the resultants
