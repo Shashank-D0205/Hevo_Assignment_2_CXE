@@ -157,7 +157,6 @@ WHERE product_name = 'Unknown Product';
 
 🎥 Loom Video Link
 
-(Insert after recording)
 ➡️ “[Loom Video: https://www.loom.com/…](https://www.loom.com/share/487e2f9dacf7448db7390522facf4eb5)”
 
 📬 Submission Details
