@@ -179,9 +179,6 @@ WHERE product_name = 'Unknown Product';
 ---
 📬 Submission Details
 
-Hevo Account Team Name: gmail.com_187 (workspace name)
-
-Pipeline Number: 3
 
 Model Numbers:
 
