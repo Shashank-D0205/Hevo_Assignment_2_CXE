@@ -169,10 +169,14 @@ SELECT *
 FROM FINAL_TABLE
 WHERE product_name = 'Unknown Product';
 
+---
+
 🎥 Loom Video Link
 
 ➡️ “[Loom Video: https://www.loom.com/…](https://www.loom.com/share/487e2f9dacf7448db7390522facf4eb5)”
 
+
+---
 📬 Submission Details
 
 Hevo Account Team Name: gmail.com_187 (workspace name)
@@ -187,7 +191,7 @@ Model 4: CLEAN ORDERS
 
 Model 5: CLEAN PRODUCTS
 
+Model 6: JOIN the resultants
+
 
 ---
-
-Model 6: JOIN the resultants
