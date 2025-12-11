@@ -64,12 +64,13 @@ amount_final AS (
         CASE 
             WHEN currency_std = 'USD' THEN amount_final
             WHEN currency_std = 'INR' THEN amount_final * 0.012
-            WHEN currency_std = 'EUR' THEN amount_final * 1.08
-            WHEN currency_std = 'SGD' THEN amount_final * 0.74
+            WHEN currency_std = 'EUR' THEN amount_final * 1.16
+            WHEN currency_std = 'SGD' THEN amount_final * 0.77
             ELSE amount_final  
         END AS amount_usd
     FROM amount_final
 )
 
 SELECT *
+
 FROM usd_converted
